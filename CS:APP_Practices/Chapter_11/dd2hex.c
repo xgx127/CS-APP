@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	sscanf(argv[1], "%s", buf);
 	if (!inet_pton(AF_INET, buf, &addrn))
 		perror("inet_pton");
-    addrh = ntohl(addrn);	
+	addrh = ntohl(addrn);	
 	printf("0x%x\n", addrh);
 
 	exit(0);
